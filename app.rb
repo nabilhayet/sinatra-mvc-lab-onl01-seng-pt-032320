@@ -10,7 +10,5 @@ class App < Sinatra::Base
     text_from_user = params[:user_text]
     @pig_latin = PigLatinizer.new
     @pig_latin.piglatinize(text_from_user)
-
-    erb :results
   end
 end
