@@ -8,7 +8,7 @@ class PigLatinizer
       arr = words.split(" ")
         arr.map.with_index do |value, index|
           c = value[0]
-            binding.pry
+            
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
               result = value + "way"
               arr[index] = result
@@ -20,6 +20,7 @@ class PigLatinizer
 
             end
         end
+        binding.pry
 
   end
 end
