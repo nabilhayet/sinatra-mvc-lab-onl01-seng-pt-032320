@@ -6,7 +6,7 @@ class PigLatinizer
 
       val=""
       arr = words.split(" ")
-        arr.map._index do |value, index|
+        arr.map.with_index do |value, index|
           c = value[0]
             binding.pry
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
