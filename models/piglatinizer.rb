@@ -6,13 +6,13 @@ class PigLatinizer
       results =[]
       val=""
       arr = words.split(" ")
-      results =  arr.map.with_index do |value, index|
+       arr.map.with_index do |value, index|
           c = value[0]
 
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
               result = value + "way"
               # arr[index] = result
-              results << result 
+              results << result
             else
               index = value.index(/[aeiouAEIOU]/)
               val = value.slice!(0..index-1)
