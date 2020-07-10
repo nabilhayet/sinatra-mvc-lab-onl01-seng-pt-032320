@@ -17,7 +17,6 @@ class PigLatinizer
               index = value.index(/[aeiouAEIOU]/)
               val = value.slice!(0..index-1)
               result = value + val + "ay"
-              arr[index] = result
 
             end
         end
