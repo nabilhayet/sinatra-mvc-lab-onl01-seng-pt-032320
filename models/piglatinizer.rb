@@ -10,14 +10,15 @@ class PigLatinizer
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
               result = value + "way"
               arr[index] = result
+              binding.pry
             else
               index = value.index(/[aeiouAEIOU]/)
               val = value.slice!(0..index-1)
               result = value + val + "ay"
               arr[index] = result
+
             end
         end
-        arr
-        binding.pry
+
   end
 end
