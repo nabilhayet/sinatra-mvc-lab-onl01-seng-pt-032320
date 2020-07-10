@@ -3,10 +3,10 @@ class PigLatinizer
   def piglatinize(words)
       result = ""
       arr=[]
-
+      results =[]
       val=""
       arr = words.split(" ")
-        arr.map.with_index do |value, index|
+      results =   arr.map.with_index do |value, index|
           c = value[0]
 
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
