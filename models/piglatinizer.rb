@@ -8,13 +8,13 @@ class PigLatinizer
         arr.each_with_index do |value, index|
           c = value[0]
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
-              value = value + "way"
-              arr[index] = value
+              result = value + "way"
+              arr[index] = result
             else
-              index = value.index(/[aeiou]/)
-              val = value.slice!(0,index)
-              value = value + val + "ay"
-              arr[index] = value
+              index = value.index(/[aeiouAEIOU]/)
+              val = value.slice!(0..index-1)
+              result = value + val + "ay"
+              arr[index] = result
             end
         end
 
