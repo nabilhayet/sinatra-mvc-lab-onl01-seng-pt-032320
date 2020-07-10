@@ -6,7 +6,7 @@ class PigLatinizer
       results =[]
       val=""
       arr = words.split(" ")
-      results =   arr.map.with_index do |value, index|
+      arr.map.with_index do |value, index|
           c = value[0]
 
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
@@ -17,7 +17,7 @@ class PigLatinizer
               index = value.index(/[aeiouAEIOU]/)
               val = value.slice!(0..index-1)
               result = value + val + "ay"
-              results[index] = result 
+              results[index] = result
             end
         end
         results
