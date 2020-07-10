@@ -17,6 +17,7 @@ class PigLatinizer
               arr[index] = result
             end
         end
-
+        arr
+        binding.pry
   end
 end
