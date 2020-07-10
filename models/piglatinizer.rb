@@ -12,7 +12,6 @@ class PigLatinizer
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
               result = value + "way"
               results[index] = result
-
             else
               index = value.index(/[aeiouAEIOU]/)
               val = value.slice!(0..index-1)
