@@ -20,6 +20,7 @@ class PigLatinizer
 
             end
         end
+        results
         binding.pry
 
   end
